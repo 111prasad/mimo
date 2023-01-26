@@ -1,0 +1,98 @@
+
+    1  yum update -y
+    2  yum install -y
+    3  yum install docker -y
+    4  systemctl start docker
+    5  systemctl enable docker
+    6  systemctl status docker
+    7  docker images
+    8  docker pull busybox nginx
+    9  docker run -d --name nginx -p 8089:80 nginx
+   10  docker ps -a
+   11  docker  run -it busybox /bin/sh
+   12  docker kill 2123501b93d4
+   13  docker container prune -y
+   14  docker container inspects image sha256:05a79c7279f71f86a2a0d05eb72fcb56ea36139150f0a75cd87e80a4272e4e39
+   15  yum update -y
+   16  yum install docker -y
+   17  systemctl start docker
+   18  systemctl enable docker
+   19  systemctl status docker
+   20  docker images
+   21  docker pull alpine
+   22  docker run -d name alpine  -p 8089:80 alpine
+   23  docker ps
+   24  docker ps -a
+   25  yum install docker
+   26  sudo yum update
+   27  sudo yum search docker
+   28  sudo yum info docker
+   29  sudo yum install docker
+   30  docker --version
+   31  vi Dockerfile
+   32  ll
+   33  docker build -t Dockerfile
+   34  docker --help
+   35  docker build -t myimage1:1.0 .
+   36  docker ps
+   37  docker images
+   38  docker ps -a
+   39  docker build -t myimage1:1.0 .
+   40  docker images
+   41  docker build -t myimage1:2.0 .
+   42  docker images
+   43  docker build -t myimage1:2.0 .
+   44  docker ps -a
+   45  docker build -t myimage1:2.0 .
+   46  docker ps -a
+   47  docker build -t myimage1:2.0 .
+   48  docker ps -a
+   49  docker build -t myimage1:5.0 .
+   50  docker ps -a
+   51  vi Dockerfile
+   52  docker build -t myimage1:9.0 .
+   53  docker ps -a
+   54  docker start 1fcf45a810e8
+   55  docker ps -a
+   56  docker ps
+   57  docker images
+   58  clear
+   59  exit
+   60  ll
+   61  cd
+   62  vi Dockerfile
+   63  docker build -t apache_image:1.0 .
+   64  docker ps
+   65  docker ps -a
+   66  docker images
+   67  docker build -t  .
+   68  docker build -t .
+   69  docker build -t apache .
+   70  docker build -t apache_image:1.0 .
+   71  docker images
+   72  docker build -t apache_image:1 .
+   73  docker images
+   74  mkdir apache_folder
+   75  cd apache_folder/
+   76  mkdir apache_folder
+   77  ll
+   78  rm -rf apache_folder/
+   79  cd ..
+   80  mv Dockerfile apache_folder/
+   81  cd apache_folder/
+   82  ll
+   83  docker build -t apache_image:1.0 .
+   84  vi Dockerfile
+   85  docker build -t apache_image:1.0 .
+   86  docker ps -a
+   87  docker images
+   88  docker ps -a
+   89  docker images
+   90  docker run --name myapache -d -p 80:80 apache_image:1.0
+   91  vi Dockerfile
+   92  docker build -t simpli_image
+   93  docker build -t simpli_image .
+   94  docker images
+   95  docker build -t simpli_image .
+   96  docker images
+   97  history
